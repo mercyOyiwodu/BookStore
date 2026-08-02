@@ -37,6 +37,8 @@ const options = {
     info: {
       title: 'BookStore API',
       version: '1.0.0',
+      description:
+        'The BookStore API provides endpoints for user authentication and book management. Users can register, log in, browse books, read or download free books, manage favorites, while administrators can create, update, and delete books.',
     },
     servers: [
       {
@@ -44,7 +46,7 @@ const options = {
         description: 'Development server',
       },
       {
-        url: 'https://myapp.com',
+        url: 'https://bookstore-uyug.onrender.com',
         description: 'Production server',
       },
     ],
