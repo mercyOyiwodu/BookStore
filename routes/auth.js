@@ -6,7 +6,7 @@ const { authenticate } = require('../middleware/auth');
 /**
  * @swagger
  * tags:
- *   name: Users
+ *   name: Authentication
  *   description: User Authentication APIs
  */
 
@@ -93,10 +93,10 @@ const { authenticate } = require('../middleware/auth');
 
 /**
  * @swagger
- * /users/register:
+ * /auth/register:
  *   post:
  *     summary: Register a new user
- *     tags: [Users]
+ *     tags: [Authentication]
  *     requestBody:
  *       required: true
  *       content:
@@ -132,10 +132,10 @@ router.post('/register', register);
 
 /**
  * @swagger
- * /users/login:
+ * /auth/login:
  *   post:
  *     summary: Login user
- *     tags: [Users]
+ *     tags: [Authentication]
  *     requestBody:
  *       required: true
  *       content:
@@ -166,10 +166,10 @@ router.post('/login', login);
 
 /**
  * @swagger
- * /users/me:
+ * /auth/me:
  *   get:
  *     summary: Get logged in user's profile
- *     tags: [Users]
+ *     tags: [Authentication]
  *     security:
  *       - bearerAuth: []
  *     responses:
